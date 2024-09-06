@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <form id="location-form" action="#" novalidate>
+      <label for="location">Enter a location:</label>
+      <input
+        type="text"
+        name="location"
+        id="location"
+        placeholder='"Chicago"'
+        required
+      />
+      <button class="unit-toggle">°F</button>
+      <button id="search">Search</button>
+    </form>
+    <div id="weather-data">
+      <div class="weather-header">
+        <div class="location-date">
+          <div class="location"></div>
+          <div class="dateTime"></div>
+        </div>
+        <div class="temp-container">
+          <div class="temp"></div>
+          <div class="temp-range">
+            <div class="tempMin"></div>
+            <div class="slash">&nbsp;/&nbsp;</div>
+            <div class="tempMax"></div>
+          </div>
+        </div>
+        <div class="conditions"></div>
+      </div>
+      <div id="weather-icon-container">
+        <img
+          class="partly-cloudy-day hidden"
+          src="./weather-icons/png-icons/partly-cloudy-day.png"
+          alt="icon of a sun hidden behind a cloud, indicating a partly cloudy day."
+        />
+        <img
+          class="clear-day hidden"
+          src="./weather-icons/png-icons/clear-day.png"
+          alt="icon of a sun, indicating a clear day."
+        />
+        <img
+          class="clear-night hidden"
+          src="./weather-icons/png-icons/clear-night.png"
+          alt="icon of a moon, indicating a clear night."
+        />
+        <img
+          class="cloudy hidden"
+          src="./weather-icons/png-icons/cloudy.png"
+          alt="icon of clouds, indicating a cloudy day."
+        />
+        <img
+          class="fog hidden"
+          src="./weather-icons/png-icons/fog.png"
+          alt="icon depiciting fog."
+        />
+        <img
+          class="hail hidden"
+          src="./weather-icons/png-icons/hail.png"
+          alt="icon idicating hail."
+        />
+        <img
+          class="partly-cloudy-night hidden"
+          src="./weather-icons/png-icons/partly-cloudy-night.png"
+          alt="icon indicating a partyl cloudy night."
+        />
+        <img
+          class="rain-snow-showers-day hidden"
+          src="./weather-icons/png-icons/rain-snow-showers-day.png"
+          alt="icon indicating rain/snow showers during the day."
+        />
+        <img
+          class="rain-snow-showers-night hidden"
+          src="./weather-icons/png-icons/rain-snow-showers-night.png"
+          alt="icon idicating rain/snow showers during the night."
+        />
+        <img
+          class="rain-snow hidden"
+          src="./weather-icons/png-icons/rain-snow.png"
+          alt="icon indicating rain/snow."
+        />
+        <img
+          class="rain hidden"
+          src="./weather-icons/png-icons/rain.png"
+          alt="icon idicating rain."
+        />
+      </div>
+      <div class="weather-body">
+        <div class="dayDesc"></div>
+        <div class="precipProb"></div>
+        <div class="humidity"></div>
+        <div class="weekDesc"></div>
+      </div>
+    </div>
+  </body>
+</html>

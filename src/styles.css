@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "robotoregular";
+  src: url("./fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("./fonts/roboto/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "robotoregular";
+}
+
+button {
+  background-color: #bde0fe;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 20px;
+}
+
+#weather-data {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 1rem;
+  align-items: center;
+}
+
+#location-form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+}
+
+.weather-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.temp-range {
+  display: flex;
+  justify-content: end;
+}
+
+#weather-icon-container {
+  justify-self: end;
+}
+
+.weather-body {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-body > * {
+  border-bottom: 1px solid gray;
+}
+
+.temp {
+  text-align: end;
+  font-size: 2.5rem;
+}
+
+.unit-toggle {
+  width: min-content;
+}
+
+.location {
+  font-size: 1.7rem;
+}
+
+.dateTime {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.conditions {
+  font-size: 1rem;
+  font-style: italic;
+}
